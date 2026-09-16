@@ -80,9 +80,101 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button,inp
 @media(max-width:620px){.site-header{top:34px}.site-header.is-scrolled{top:0}.header-shell{border-radius:18px}.hero{min-height:auto}.hero-layout{padding:140px 0 105px}.hero h1{font-size:clamp(2.75rem,13vw,3.7rem);overflow-wrap:anywhere}.hero-copy{min-width:0}.hero-visual{min-height:350px}.hero-spotlight{min-height:350px}.hero-spotlight__frame{inset:10px -55px 20px -45px}.hero-vehicle{width:132%}.trust-strip{margin-top:-62px}.quote-card--inline{padding:28px 20px;border-radius:22px}.quote-card__header{padding-bottom:24px}.quote-card__header h2{font-size:2rem}.quote-card__benefits{gap:6px}.quote-fields{grid-template-columns:1fr}.quote-submit{min-height:68px}#beneficios{padding-top:110px}}
 
 /* Conversion refinements */
-.hero{min-height:740px}.hero-layout{min-height:740px;padding:138px 0 88px}.hero h1{font-size:clamp(3.35rem,4.75vw,4.75rem)}.hero-lead{margin-top:22px}.hero-actions{margin-top:27px}.hero-metrics{margin-top:32px}.hero-footnote{margin-top:18px}.hero-spotlight__frame{inset:48px -72px 55px -12px}.hero-vehicle{width:112%}.trust-strip{margin-top:-112px}.floating-wa span{display:none}.quote-submit:disabled{cursor:wait;opacity:.88}.quote-submit.is-loading{background:linear-gradient(100deg,#1faa66,#18b970);box-shadow:0 15px 32px rgba(24,185,112,.25)}
+.hero{min-height:740px}.hero-layout{min-height:740px;padding:180px 0 46px}.hero h1{font-size:clamp(3.35rem,4.75vw,4.75rem)}.hero-lead{margin-top:22px}.hero-actions{margin-top:27px}.hero-metrics{margin-top:32px}.hero-footnote{margin-top:18px}.hero-spotlight__frame{inset:48px -72px 55px -12px}.hero-vehicle{width:112%}.trust-strip{margin-top:-112px}.floating-wa span{display:none}.quote-submit:disabled{cursor:wait;opacity:.88}.quote-submit.is-loading{background:linear-gradient(100deg,#1faa66,#18b970);box-shadow:0 15px 32px rgba(24,185,112,.25)}
 @media(max-width:900px){.hero,.hero-layout{min-height:auto}.hero-layout{padding:145px 0 118px}.hero h1{font-size:clamp(3.2rem,8vw,4.5rem)}.hero-spotlight__frame{inset:30px -45px 50px 0}.hero-vehicle{width:102%}.trust-strip{margin-top:-82px}}
 @media(max-width:620px){body{padding-bottom:72px}.hero-layout{padding:130px 0 92px}.hero h1{font-size:clamp(2.7rem,12vw,3.55rem)}.hero-metrics{margin-top:28px}.hero-visual{min-height:315px}.hero-spotlight{min-height:315px}.hero-spotlight__frame{inset:15px -25px 20px -15px}.hero-vehicle{width:110%}.trust-strip{margin-top:-48px}.floating-wa{width:auto;height:56px;right:14px;bottom:12px;padding:0 20px;display:flex;align-items:center;gap:10px;border-radius:14px;font-size:.86rem;font-weight:800}.floating-wa svg{width:27px;height:27px}.floating-wa span{display:inline}.quote-card__benefits span{font-size:.61rem}}
 
 .header-shell .brand{width:176px;height:62px;display:block;overflow:hidden}.header-shell .brand img{width:176px;max-width:none;transform:translateY(-24px)}
 @media(max-width:620px){.header-shell .brand{width:150px;height:54px}.header-shell .brand img{width:150px;transform:translateY(-21px)}}
+
+/* Mobile UX: leitura mais rápida, menos rolagem e alvos de toque confortáveis */
+@media(max-width:620px){
+  :root{--container:calc(100% - 24px);--radius-md:16px;--radius-lg:20px}
+  body{padding-bottom:68px}
+  .section{padding:58px 0}
+  .announcement-inner{min-height:30px;font-size:.68rem}
+  .site-header{top:30px;padding-top:10px}
+  .site-header.is-scrolled{top:0;padding:6px 0}
+  .header-shell{min-height:58px;padding:5px 10px 5px 14px;border-radius:15px}
+  .header-shell .brand{width:132px;height:46px}
+  .header-shell .brand img{width:132px;transform:translateY(-18px)}
+  .menu-toggle{width:44px;height:44px}
+  .mobile-panel{padding:8px}
+  .mobile-panel>a:not(.btn){min-height:44px;padding:11px 12px;display:flex;align-items:center}
+
+  .hero-layout{padding:112px 0 58px;gap:6px}
+  .hero h1{font-size:clamp(2.35rem,11vw,3.15rem);line-height:1.01}
+  .hero h1::after{width:56px;height:5px;margin-top:17px}
+  .hero-lead{margin-top:18px;font-size:.88rem;line-height:1.55}
+  .hero-actions{margin-top:21px;gap:9px}
+  .hero-actions .btn{min-height:50px}
+  .hero-metrics{margin-top:23px}
+  .metric-card{padding:0 8px}
+  .metric-card strong{font-size:1.2rem}
+  .metric-card .description{margin-top:5px;font-size:.56rem}
+  .hero-footnote{margin-top:13px;font-size:.68rem}
+  .hero-visual,.hero-spotlight{min-height:245px}
+  .hero-spotlight__halo{width:220px;height:220px}
+  .hero-spotlight__frame{inset:4px -20px 5px -10px}
+  .hero-vehicle{width:106%}
+
+  .trust-strip{margin-top:-32px}
+  .quote-card--inline{padding:20px 16px;border-radius:18px;gap:17px}
+  .quote-card__header{padding:0 0 17px}
+  .quote-card__tag{padding:6px 9px;font-size:.6rem}
+  .quote-card__header h2{margin:12px 0 8px;font-size:1.65rem}
+  .quote-card__header p{font-size:.78rem;line-height:1.5}
+  .quote-card__benefits{margin-top:14px;gap:5px}
+  .quote-card__benefits span{padding:6px 7px;font-size:.58rem}
+  .quote-form--inline{gap:10px}
+  .quote-fields{gap:9px}
+  .input-group input,.input-group select{height:54px;padding:20px 14px 6px;font-size:.86rem}
+  .input-group label{top:18px;left:14px;font-size:.78rem}
+  .quote-submit{min-height:60px}
+  .quote-submit span{font-size:.92rem}
+  .form-note{font-size:.63rem}
+  #beneficios{padding-top:82px}
+
+  .section-heading{margin-bottom:26px}
+  .section-heading h2,.company-copy h2,.faq-copy h2{font-size:1.95rem}
+  .section-heading p,.company-copy>p{margin-top:14px;font-size:.86rem;line-height:1.6}
+  .feature-grid{gap:11px}
+  .feature-card{min-height:auto;padding:22px}
+  .feature-icon{width:43px;height:43px;padding:10px}
+  .feature-card h3{margin:17px 0 7px}
+
+  .vehicle-tabs{gap:7px;margin-bottom:13px}
+  .vehicle-tab{min-width:155px;min-height:66px;grid-template-columns:48px 1fr;column-gap:9px}
+  .vehicle-tab__media{width:48px;height:48px}
+  .vehicle-showcase{min-height:420px;padding:25px 18px}
+  .vehicle-copy h3{font-size:2.2rem}
+  .vehicle-copy p{margin-top:12px;line-height:1.55}
+  .vehicle-media{min-height:185px}
+  .vehicle-media__orb{width:190px;height:190px}
+  .service-benefits{margin-top:22px}
+  .service-benefit{min-height:138px;padding:16px 12px}
+  .service-benefit h3{margin:12px 0 6px}
+
+  .company-layout{gap:28px}
+  .value-list{margin-top:24px}
+  .value-item{padding:16px 0}
+  .company-panels{min-height:430px}
+  .brand-panel{min-height:300px;padding:25px 20px}
+  .brand-panel img{width:175px}
+  .brand-panel p{margin:15px 0;font-size:.86rem}
+  .data-card{min-height:105px;padding:14px}
+  .testimonial-grid{gap:11px}
+  .testimonial-card{min-height:230px;padding:24px}
+  .testimonial-card p{margin-top:20px;line-height:1.6}
+  .testimonial-person{margin-top:22px}
+
+  .faq-layout{gap:28px}
+  .faq-item summary{min-height:58px;padding:18px 2px;font-size:.88rem}
+  .faq-item p{margin:-2px 40px 20px 2px;font-size:.81rem;line-height:1.6}
+  .final-cta{padding-top:8px}
+  .final-cta__shell{min-height:auto;padding:30px 20px;gap:25px}
+  .final-cta h2{font-size:1.9rem}
+  .site-footer{padding:50px 0 24px}
+  .footer-grid{gap:28px 20px}
+  .floating-wa{height:54px;right:12px;bottom:10px;padding:0 17px}
+}
