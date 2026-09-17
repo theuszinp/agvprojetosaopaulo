@@ -269,3 +269,209 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button,inp
     border-left:2px solid rgba(255,255,255,.3);
   }
 }
+
+/* Espacamento apos a remocao do formulario de cotacao. */
+#beneficios{
+  padding-top:112px;
+}
+
+@media(max-width:900px){
+  #beneficios{
+    padding-top:82px;
+  }
+}
+
+@media(max-width:620px){
+  #beneficios{
+    padding-top:58px;
+  }
+}
+
+/* Cotacao compacta integrada ao hero */
+.hero,
+.hero-layout{
+  min-height:940px;
+}
+
+.hero-layout{
+  padding-bottom:72px;
+}
+
+.hero-quote{
+  width:min(100%,620px);
+  margin-top:30px;
+  padding:20px;
+  color:var(--ink);
+  border:1px solid rgba(255,255,255,.4);
+  border-radius:20px;
+  background:rgba(255,255,255,.96);
+  box-shadow:0 24px 55px rgba(4,31,105,.24);
+}
+
+.hero-quote__heading{
+  margin-bottom:16px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:16px;
+}
+
+.hero-quote__eyebrow{
+  color:var(--blue);
+  font-size:.64rem;
+  font-weight:800;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+
+.hero-quote h2{
+  margin:4px 0 0;
+  font:700 1.18rem/1.2 "Space Grotesk",sans-serif;
+  letter-spacing:-.025em;
+}
+
+.hero-quote__time{
+  flex:0 0 auto;
+  padding:6px 9px;
+  color:#1656d9;
+  border-radius:999px;
+  background:#eaf1ff;
+  font-size:.62rem;
+  font-weight:800;
+}
+
+.hero-quote__fields{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:11px;
+}
+
+.hero-quote__field{
+  display:grid;
+  gap:5px;
+  color:#40506d;
+  font-size:.66rem;
+  font-weight:800;
+}
+
+.hero-quote__field input,
+.hero-quote__field select{
+  width:100%;
+  height:48px;
+  padding:0 13px;
+  color:var(--ink);
+  border:1px solid #ccd8ec;
+  border-radius:10px;
+  outline:none;
+  background:#f8faff;
+  font-size:.8rem;
+  transition:border-color .2s ease,box-shadow .2s ease,background .2s ease;
+}
+
+.hero-quote__field input::placeholder{
+  color:#8793a8;
+}
+
+.hero-quote__field input:focus,
+.hero-quote__field select:focus{
+  border-color:var(--blue);
+  background:#fff;
+  box-shadow:0 0 0 3px rgba(21,84,237,.12);
+}
+
+.hero-quote__submit{
+  width:100%;
+  min-height:54px;
+  margin-top:13px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  color:#fff;
+  border:0;
+  border-radius:11px;
+  background:linear-gradient(100deg,#ff9d13,#ff8200);
+  box-shadow:0 12px 26px rgba(255,130,0,.25);
+  font-weight:800;
+  transition:transform .2s ease,box-shadow .2s ease,opacity .2s ease;
+}
+
+.hero-quote__submit:hover{
+  transform:translateY(-2px);
+  box-shadow:0 15px 30px rgba(255,130,0,.34);
+}
+
+.hero-quote__submit small{
+  margin-top:2px;
+  font-size:.6rem;
+  opacity:.88;
+}
+
+.hero-quote__submit.is-loading{
+  cursor:wait;
+  opacity:.72;
+}
+
+.hero-quote__privacy{
+  margin:9px 0 0;
+  color:#6f7c91;
+  font-size:.61rem;
+  text-align:center;
+}
+
+.floating-wa.is-hidden-by-form{
+  pointer-events:none;
+  opacity:0;
+  transform:translateY(14px);
+}
+
+@media(min-width:901px) and (max-width:1100px){
+  .hero,
+  .hero-layout{
+    min-height:1050px;
+  }
+
+  .hero-layout{
+    padding-bottom:76px;
+  }
+}
+
+@media(max-width:900px){
+  .hero,
+  .hero-layout{
+    min-height:auto;
+  }
+
+  .hero-quote{
+    width:min(100%,690px);
+  }
+}
+
+@media(max-width:620px){
+  .hero-quote{
+    margin-top:24px;
+    padding:17px 14px;
+    border-radius:16px;
+  }
+
+  .hero-quote__heading{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .hero-quote__fields{
+    grid-template-columns:1fr;
+    gap:9px;
+  }
+
+  .hero-quote__field input,
+  .hero-quote__field select{
+    height:50px;
+    font-size:16px;
+  }
+
+  .hero-quote__submit{
+    min-height:58px;
+  }
+}

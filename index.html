@@ -59,7 +59,7 @@
         </div>
         <a
           class="announcement-link js-wa-link"
-          href="#simulacao"
+          href="https://wa.me/5511955549630"
           data-message="Olá! Quero fazer uma simulação da proteção veicular da Universo AGV."
         >
           Falar com consultor
@@ -85,7 +85,7 @@
           <a class="btn btn-ghost" href="#faq">Tirar dúvidas</a>
           <a
             class="btn btn-primary js-wa-link"
-            href="#simulacao"
+            href="https://wa.me/5511955549630"
             data-message="Olá! Quero falar com um consultor da Universo AGV."
           >
             Faça sua cotação
@@ -111,7 +111,7 @@
         <a href="#faq">Dúvidas</a>
         <a
           class="btn btn-primary js-wa-link"
-          href="#simulacao"
+          href="https://wa.me/5511955549630"
           data-message="Olá! Quero fazer uma simulação da proteção veicular."
         >
           Falar com consultor
@@ -132,7 +132,7 @@
             <div class="hero-actions">
               <a
                 class="btn btn-primary btn-large js-wa-link"
-                href="#simulacao"
+                href="https://wa.me/5511955549630"
                 data-message="Olá! Quero simular a proteção do meu veículo."
               >
                 Receba sua cotação agora
@@ -140,31 +140,71 @@
               <a class="btn btn-secondary btn-large" href="#veiculos">Ver coberturas</a>
             </div>
 
-            <div class="hero-metrics">
-              <article class="metric-card">
-                <strong>
-                  <span class="count-up" data-count="100">0</span>
-                  <span class="symbol">k+</span>
-                </strong>
-                <span class="description">associados protegidos em todo o Brasil.</span>
-              </article>
+            <form class="hero-quote" id="heroQuoteForm">
+              <div class="hero-quote__heading">
+                <div>
+                  <span class="hero-quote__eyebrow">Cotação gratuita</span>
+                  <h2>Receba uma simulação personalizada</h2>
+                </div>
+                <span class="hero-quote__time">Leva menos de 1 minuto</span>
+              </div>
 
-              <article class="metric-card">
-                <strong>
-                  <span class="count-up" data-count="39">0</span>
-                  <span class="symbol">+</span>
-                </strong>
-                <span class="description">benefícios exclusivos para associados.</span>
-              </article>
+              <div class="hero-quote__fields">
+                <label class="hero-quote__field">
+                  <span>Seu nome</span>
+                  <input
+                    type="text"
+                    name="nome"
+                    autocomplete="name"
+                    placeholder="Como podemos te chamar?"
+                    required
+                  />
+                </label>
 
-              <article class="metric-card">
-                <strong>
-                  <span class="count-up" data-count="100">0</span>
-                  <span class="symbol">%</span>
-                </strong>
-                <span class="description">da Tabela FIPE conforme regulamento.</span>
-              </article>
-            </div>
+                <label class="hero-quote__field">
+                  <span>WhatsApp</span>
+                  <input
+                    type="tel"
+                    name="telefone"
+                    autocomplete="tel"
+                    inputmode="tel"
+                    placeholder="(00) 00000-0000"
+                    pattern="\(\d{2}\) \d{4,5}-\d{4}"
+                    title="Digite um telefone com DDD"
+                    required
+                  />
+                </label>
+
+                <label class="hero-quote__field">
+                  <span>Veículo</span>
+                  <select name="tipo" required>
+                    <option value="" selected disabled>Selecione uma opção</option>
+                    <option value="Moto">Moto</option>
+                    <option value="Carro">Carro</option>
+                    <option value="Caminhão">Caminhão</option>
+                    <option value="Van">Van</option>
+                    <option value="Especial">Uber, premium ou especial</option>
+                  </select>
+                </label>
+
+                <label class="hero-quote__field">
+                  <span>Cidade / UF</span>
+                  <input
+                    type="text"
+                    name="cidade"
+                    autocomplete="address-level2"
+                    placeholder="Ex.: Salvador / BA"
+                  />
+                </label>
+              </div>
+
+              <button class="hero-quote__submit" type="submit">
+                <span>Receber cotação no WhatsApp</span>
+                <small>Sem compromisso</small>
+              </button>
+
+              <p class="hero-quote__privacy">Seus dados serão usados somente para realizar a cotação.</p>
+            </form>
 
           </div>
 
@@ -183,81 +223,6 @@
 
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="trust-strip" id="simulacao">
-        <div class="container">
-          <aside class="quote-card quote-card--inline reveal">
-            <div class="quote-card__header">
-              <span class="quote-card__tag">Cotação gratuita</span>
-              <h2>Descubra agora quanto custa proteger seu veículo</h2>
-              <p>Leva menos de 1 minuto. Envie os dados e fale direto com um consultor.</p>
-              <div class="quote-card__benefits" aria-label="Vantagens da cotação">
-                <span>Sem compromisso</span>
-                <span>Resposta rápida</span>
-                <span>CNPJ verificado</span>
-              </div>
-            </div>
-
-            <form class="quote-form quote-form--inline" id="quoteForm">
-              <div class="quote-fields">
-                <div class="input-group">
-                  <input
-                    type="text"
-                    id="nome"
-                    name="nome"
-                    placeholder=" "
-                    autocomplete="name"
-                    required
-                  />
-                  <label for="nome">Nome completo</label>
-                </div>
-
-                <div class="input-group">
-                  <input
-                    type="tel"
-                    id="telefone"
-                    name="telefone"
-                    placeholder=" "
-                    autocomplete="tel"
-                    required
-                  />
-                  <label for="telefone">Telefone / WhatsApp</label>
-                </div>
-
-                <div class="input-group">
-                  <select id="tipo" name="tipo" required>
-                    <option value="" disabled selected hidden></option>
-                    <option value="Moto">Moto</option>
-                    <option value="Carro">Carro</option>
-                    <option value="Caminhão">Caminhão</option>
-                    <option value="Van">Van</option>
-                    <option value="Especial">Especial (Uber / Premium / Outros)</option>
-                  </select>
-                  <label for="tipo">Tipo do veículo</label>
-                </div>
-
-                <div class="input-group">
-                  <input
-                    type="text"
-                    id="cidade"
-                    name="cidade"
-                    placeholder=" "
-                    autocomplete="address-level2"
-                  />
-                  <label for="cidade">Cidade / UF</label>
-                </div>
-              </div>
-
-              <button class="btn btn-primary btn-pulse quote-submit" type="submit">
-                <span>Quero minha cotação grátis</span>
-                <small>Continuar pelo WhatsApp →</small>
-              </button>
-
-              <p class="form-note">🔒 Seus dados são usados apenas para realizar a cotação.</p>
-            </form>
-          </aside>
         </div>
       </section>
 
@@ -612,7 +577,7 @@
             <div class="final-cta__actions">
               <a
                 class="btn btn-primary btn-pulse js-wa-link"
-                href="#simulacao"
+                href="https://wa.me/5511955549630"
                 data-message="Olá! Vim pelo site e quero fazer uma simulação com a Universo AGV."
               >
                 Falar agora no WhatsApp
@@ -663,7 +628,7 @@
 
     <a
       class="floating-wa js-wa-link"
-      href="#simulacao"
+      href="https://wa.me/5511955549630"
       data-message="Olá! Quero atendimento da Universo AGV pelo WhatsApp."
       aria-label="Falar no WhatsApp"
     >
